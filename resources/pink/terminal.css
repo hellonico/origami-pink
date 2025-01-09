@@ -1,0 +1,199 @@
+/* Root styling for the application */
+.root {
+    -fx-background-color: black; /* Terminal background */
+    -fx-font-family: "Monospaced"; /* Monospaced font */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: hotpink; /* Default text color */
+}
+
+/* General styling for controls */
+.text-field, .combo-box, .web-view, .button {
+    -fx-background-color: black;
+    -fx-border-color: hotpink;
+    -fx-border-width: 1px;
+    -fx-text-fill: hotpink;
+    -fx-font-family: "Monospaced";
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-background-radius: 5px;
+}
+
+.text-area {
+    -fx-control-inner-background: black; /* Ensures the text area background is black */
+    -fx-text-fill: hotpink; /* Text color */
+    -fx-font-family: "Monospaced"; /* Monospaced font */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-color: hotpink; /* Border color */
+    -fx-border-radius: 5px; /* Matches rounded border */
+    -fx-background-radius: 5px; /* Matches rounded background */
+    -fx-border-width: 1px; /* Border width */
+    -fx-focus-color: hotpink; /* Keeps focus border hotpink */
+    -fx-faint-focus-color: transparent; /* Prevents faint focus highlight */
+}
+
+
+.text-area:focused, .text-field:focused, .combo-box:focused, .web-view:focused {
+    -fx-border-color: hotpink; /* Keep border hotpink on focus */
+}
+
+.button:hover {
+    -fx-background-color: hotpink;
+    -fx-text-fill: black; /* Black text on hotpink background when hovered */
+}
+
+/* ComboBox-specific styles */
+.combo-box .arrow, .combo-box-popup .list-view .cell:hover {
+    -fx-background-color: hotpink; /* Arrow and hovered cell background */
+}
+
+.combo-box .list-cell, .combo-box-popup, .combo-box-popup .list-view {
+    -fx-background-color: black;
+    -fx-text-fill: hotpink;
+}
+
+.combo-box-popup {
+    -fx-border-color: hotpink;
+    -fx-border-width: 1px;
+}
+
+.combo-box-popup .scroll-bar .thumb {
+    -fx-background-color: hotpink; /* Scrollbar thumb */
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: hotpink; /* hotpink text color for labels */
+}
+
+/* Layout padding and spacing */
+.hbox, .vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* SplitPane divider styling */
+.split-pane .split-pane-divider {
+    -fx-background-color: hotpink; /* hotpink divider */
+    -fx-pref-width: 1px; /* Thin divider */
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: black; /* Table background */
+    -fx-border-color: hotpink; /* Table border */
+    -fx-border-width: 1px;
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: hotpink;
+}
+
+.table-view .column-header, .table-view .column-header-background {
+    -fx-background-color: black; /* Header background */
+    -fx-border-color: hotpink; /* Header border */
+    -fx-border-width: 0 1px 1px 0; /* Grid-like appearance */
+    -fx-text-fill: black; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+}
+
+.table-view .cell {
+    -fx-background-color: black; /* Cell background */
+    -fx-text-fill: hotpink; /* Cell text */
+    -fx-border-color: hotpink; /* Vertical grid lines */
+    -fx-border-width: 0 1px 0 0; /* Right border for cells */
+}
+
+.table-view .cell:filled:hover {
+    -fx-background-color: hotpink; /* Row background on hover */
+    -fx-text-fill: black; /* Text color on hover */
+}
+
+/* Remove focus highlight */
+.table-view .focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Fix for remaining table area */
+.table-view .virtual-flow * {
+    -fx-background-color: black;
+}
+
+/* Grid lines styling */
+.table-view .grid-lines-pane {
+    -fx-stroke: hotpink; /* Grid lines color */
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: black; /* Scrollbar background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: hotpink; /* Scrollbar thumb */
+}
+
+/* Context menu styling */
+.context-menu {
+    -fx-background-color: black; /* Background for the context menu */
+    -fx-border-color: hotpink; /* Context menu border */
+    -fx-text-fill: hotpink; /* Text color for items */
+    -fx-font-family: "Monospaced";
+}
+
+.context-menu .menu-item {
+    -fx-background-color: black; /* Background for individual items */
+    -fx-text-fill: hotpink;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: hotpink; /* Highlighted item background */
+    -fx-text-fill: black; /* Highlighted item text */
+}
+
+/* General text styling for text fields and areas */
+.text-area, .text-field {
+    -fx-control-inner-background: black; /* Background color */
+    -fx-text-fill: hotpink; /* Text color */
+    -fx-font-family: "Monospaced"; /* Font style */
+    -fx-font-size: 14px; /* Font size */
+    -fx-border-color: hotpink; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Match border radius */
+    -fx-focus-color: hotpink; /* Focus color */
+    -fx-faint-focus-color: transparent; /* Remove faint focus effect */
+}
+
+/* Selection color in TextArea and TextField */
+.text-area .content, .text-field .content {
+    -fx-selection-fill: hotpink; /* Hotpink selection background */
+    -fx-highlight-fill: hotpink; /* Hotpink selection */
+    -fx-highlight-text-fill: black; /* Black selected text */
+}
+
+/* ComboBox selection */
+.combo-box .list-view .cell:selected,
+.combo-box-popup .list-view .cell:selected {
+    -fx-background-color: hotpink; /* Hotpink selection background */
+    -fx-text-fill: black; /* Black text in selected state */
+}
+
+/* TableView cell selection */
+.table-view .cell:selected {
+    -fx-background-color: hotpink; /* Hotpink cell background */
+    -fx-text-fill: black; /* Black text */
+}
+
+/* Selected text color for TableView focus */
+.table-view .focused .cell {
+    -fx-background-color: hotpink; /* Hotpink focus background */
+    -fx-text-fill: black; /* Black text in focused state */
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: black; /* Arrows background */
+    -fx-border-color: hotpink; /* Border for arrows */
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: hotpink; /* Arrows color */
+}
