@@ -230,3 +230,9 @@
     -fx-focus-color: transparent; /* Remove focus border color */
     -fx-faint-focus-color: transparent; /* Remove faint focus highlight */
 }
+
+
+.text-field {
+    -fx-accent: hotpink ;
+    -fx-highlight-text-fill: black; /* Font color for selected text */
+}
