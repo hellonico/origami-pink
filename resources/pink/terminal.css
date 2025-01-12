@@ -197,3 +197,36 @@
 .scroll-bar .decrement-arrow {
     -fx-background-color: hotpink; /* Arrows color */
 }
+
+.list-view {
+    -fx-background-color: black; /* ListView background */
+    -fx-text-fill: hotpink; /* Default text color */
+    -fx-border-color: hotpink; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-font-family: "Monospaced"; /* Monospaced font */
+    -fx-font-size: 14px; /* Font size */
+}
+
+.list-view .list-cell {
+    -fx-background-color: black; /* Cell background */
+    -fx-text-fill: hotpink; /* Cell text color */
+    -fx-border-color: hotpink; /* Cell border color (optional for debugging) */
+    -fx-border-width: 0px; /* Border width */
+
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: hotpink; /* Highlighted background on hover */
+    -fx-text-fill: black; /* Text color on hover */
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: hotpink; /* Highlighted background for selected cells */
+    -fx-text-fill: black; /* Text color for selected cells */
+}
+
+/* Remove focus highlight from the ListView */
+.list-view:focused {
+    -fx-focus-color: transparent; /* Remove focus border color */
+    -fx-faint-focus-color: transparent; /* Remove faint focus highlight */
+}
