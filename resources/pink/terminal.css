@@ -236,3 +236,8 @@
     -fx-accent: hotpink ;
     -fx-highlight-text-fill: black; /* Font color for selected text */
 }
+
+/* fix for table cell text */
+.table-view .cell * {
+    -fx-fill: hotpink;
+}
