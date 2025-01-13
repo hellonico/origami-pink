@@ -311,23 +311,23 @@ Does not do a lot
 }
 
 .table-view {
-    -fx-border-color: lightpink; /* Default border color */
+    -fx-border-color: hotpink; /* Default border color */
     -fx-border-width: 2px; /* Border width */
 }
 
 .table-view:focused {
-    -fx-border-color: lightpink; /* Border color when focused */
+    -fx-border-color: hotpink; /* Border color when focused */
 }
 
 .table-view:focused .column-header-background {
-    -fx-border-color: lightpink; /* Header border when focused */
+    -fx-border-color: hotpink; /* Header border when focused */
 }
 
 /* Highlight border for drop target */
 .table-view:focused:drop-target {
-    -fx-border-color: lightpink; /* Border color during drop */
+    -fx-border-color: hotpink; /* Border color during drop */
 }
 
 .table-view:drop-target {
-    -fx-border-color: lightpink; /* Border color during drag-and-drop */
+    -fx-border-color: hotpink; /* Border color during drag-and-drop */
 }
