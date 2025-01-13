@@ -233,11 +233,24 @@
 
 
 .text-field {
-    -fx-accent: hotpink ;
+    -fx-accent: hotpink;
     -fx-highlight-text-fill: black; /* Font color for selected text */
 }
 
 /* fix for table cell text */
 .table-view .cell * {
     -fx-fill: hotpink;
+}
+
+/* fix for white border */
+.text-area {
+    -fx-background-color: black;
+}
+
+.text-area .content {
+    -fx-background-color: black;
+}
+
+.text-area:focused .content {
+    -fx-background-color: black;
 }
