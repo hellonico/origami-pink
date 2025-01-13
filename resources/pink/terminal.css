@@ -256,3 +256,16 @@
 .text-area:focused .content {
     -fx-background-color: black;
 }
+
+/* Fix for filler and corners */
+.table-view .filler, .table-view .corner{
+    -fx-background-color: black;
+}
+
+.scroll-bar .filler, .scroll-bar .corner{
+    -fx-background-color: black;
+}
+
+.filler, .corner{
+    -fx-background-color: black;
+}
