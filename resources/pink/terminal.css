@@ -243,8 +243,10 @@
 }
 
 /* fix for white border */
-.text-area {
+.text-area{
     -fx-background-color: black;
+    -fx-accent: hotpink;
+    -fx-highlight-text-fill: black; /* Font color for selected text */
 }
 
 .text-area .content {
