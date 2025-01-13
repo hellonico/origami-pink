@@ -269,3 +269,65 @@
 .filler, .corner{
     -fx-background-color: black;
 }
+
+/*
+Does not do a lot
+ */
+
+
+/* Style the column header while dragging */
+.table-view .column-header .dragging {
+    -fx-background-color: lightpink; /* Background color for the dragged column header */
+    -fx-text-fill: black; /* Text color for the dragged column header */
+    -fx-border-color: hotpink; /* Optional: Border color for better visibility */
+}
+
+/* Style the placeholder for the dragged column */
+.table-view .drag-placeholder {
+    -fx-background-color: lightpink; /* Background color for the drop placeholder */
+    -fx-border-color: hotpink; /* Border color for the placeholder */
+}
+
+/* Optional: Style the column cells during dragging */
+.table-view .cell.dragging {
+    -fx-background-color: lightpink; /* Background color for the dragged column cells */
+    -fx-text-fill: black; /* Text color for the dragged column cells */
+}
+
+/* Style the column header while being dragged */
+.table-view .column-header:dragged {
+    -fx-background-color: lightpink; /* Background color for the dragged column header */
+    -fx-text-fill: black; /* Text color for the dragged column header */
+    -fx-border-color: hotpink; /* Optional: Border color for better visibility */
+    -fx-border-width: 1px; /* Optional: Border width */
+}
+
+/* Style the placeholder of the dragged column */
+.table-view .column-drag-header {
+    -fx-background-color: lightpink; /* Background of the drag placeholder */
+    -fx-text-fill: black; /* Text color for placeholder */
+    -fx-border-color: hotpink; /* Border for placeholder */
+    -fx-border-width: 1px;
+}
+
+.table-view {
+    -fx-border-color: lightpink; /* Default border color */
+    -fx-border-width: 2px; /* Border width */
+}
+
+.table-view:focused {
+    -fx-border-color: lightpink; /* Border color when focused */
+}
+
+.table-view:focused .column-header-background {
+    -fx-border-color: lightpink; /* Header border when focused */
+}
+
+/* Highlight border for drop target */
+.table-view:focused:drop-target {
+    -fx-border-color: lightpink; /* Border color during drop */
+}
+
+.table-view:drop-target {
+    -fx-border-color: lightpink; /* Border color during drag-and-drop */
+}
