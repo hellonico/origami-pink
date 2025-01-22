@@ -331,3 +331,47 @@ Does not do a lot
 .table-view:drop-target {
     -fx-border-color: hotpink; /* Border color during drag-and-drop */
 }
+
+/* MenuBar background and text styling */
+.menu-bar {
+    -fx-background-color: black; /* Black background for menu bar */
+    -fx-text-fill: hotpink; /* Hotpink text color */
+    -fx-border-color: hotpink; /* Optional: hotpink border around the menu bar */
+    -fx-border-width: 0 0 1px 0; /* Optional: bottom border only */
+}
+
+/* Menu items within the menu bar */
+.menu-bar .menu {
+    -fx-background-color: black; /* Black background for individual menus */
+    -fx-text-fill: hotpink; /* Hotpink text */
+    -fx-font-family: "Monospaced"; /* Match the font style of the app */
+}
+
+/* Hover state for menu items */
+.menu-bar .menu:hover {
+    -fx-background-color: hotpink; /* Hotpink background on hover */
+    -fx-text-fill: black; /* Black text when hovered */
+}
+
+/* Drop-down menu styling */
+.menu-item {
+    -fx-background-color: black; /* Black background for menu items */
+    -fx-text-fill: hotpink; /* Hotpink text */
+}
+
+.menu-item:hover {
+    -fx-background-color: hotpink; /* Hotpink background for hovered menu items */
+    -fx-text-fill: black; /* Black text when hovered */
+}
+
+/* Menu separator styling */
+.separator-menu-item {
+    -fx-background-color: hotpink; /* Hotpink separator */
+}
+
+/* Focus styling for the menu bar */
+.menu-bar:focused, .menu-bar .menu:focused {
+    -fx-background-color: black; /* Keep background black */
+    -fx-text-fill: hotpink; /* Keep text hotpink */
+    -fx-border-color: hotpink; /* Optional: hotpink focus border */
+}
