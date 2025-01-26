@@ -375,3 +375,41 @@ Does not do a lot
     -fx-text-fill: hotpink; /* Keep text hotpink */
     -fx-border-color: hotpink; /* Optional: hotpink focus border */
 }
+
+/* Checkbox styling */
+.check-box {
+    -fx-font-family: "Monospaced"; /* Font style for the checkbox label */
+    -fx-text-fill: hotpink; /* Text color */
+}
+
+.check-box .box {
+    -fx-background-color: black; /* Background color for the box */
+    -fx-border-color: hotpink; /* Border color */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Match border radius */
+    -fx-padding: 5px; /* Padding inside the box */
+}
+
+/* Hover effect for checkbox */
+.check-box:hover .box {
+    -fx-border-color: hotpink; /* Hotpink border on hover */
+    -fx-background-color: black; /* Ensure background stays black */
+}
+
+/* Checked state for checkbox */
+.check-box:selected .box {
+    -fx-background-color: black; /* Keep background black */
+    -fx-border-color: hotpink; /* Ensure the border remains hotpink */
+}
+
+.check-box:selected .box .mark {
+    -fx-background-color: hotpink; /* Hotpink checkmark */
+    -fx-scale-shape: true; /* Ensures proper scaling of the checkmark */
+}
+
+/* Focused checkbox */
+.check-box:focused .box {
+    -fx-border-color: hotpink; /* Highlight border for focused state */
+    -fx-faint-focus-color: transparent; /* Remove faint focus effect */
+}
