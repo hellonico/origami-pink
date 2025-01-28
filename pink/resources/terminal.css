@@ -413,3 +413,34 @@ Does not do a lot
     -fx-border-color: hotpink; /* Highlight border for focused state */
     -fx-faint-focus-color: transparent; /* Remove faint focus effect */
 }
+
+
+/* Progress bar container (background) */
+.progress-bar {
+    -fx-accent: hotpink; /* Color of the progress */
+    -fx-control-inner-background: black; /* Background color */
+    -fx-background-color: black; /* Ensure the entire background is black */
+}
+
+/* Progress bar track (empty portion) */
+.progress-bar .track {
+    -fx-background-color: black; /* Empty portion background */
+}
+
+/* Progress bar filled portion (progress indicator) */
+.progress-bar .bar {
+    -fx-background-color: hotpink; /* Color of the filled bar */
+}
+
+/* Progress bar indeterminate animation (striped effect) */
+.progress-bar:indeterminate .bar {
+    -fx-background-color: hotpink; /* Indeterminate bar color */
+    -fx-effect: dropshadow(gaussian, hotpink, 5, 0.5, 0, 0); /* Subtle glowing effect */
+}
+
+/* Focus styling for progress bar */
+.progress-bar:focused {
+    -fx-border-color: hotpink; /* Highlight border for focus */
+    -fx-border-width: 2px; /* Thickness of the border */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+}
